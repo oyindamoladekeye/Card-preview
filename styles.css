@@ -67,7 +67,8 @@ button {
 .f1,
 div.price {
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
+  font-size: 14px;
 }
 .f2,
 p.price {
@@ -86,6 +87,9 @@ div.p1 {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+.button {
+  text-align: center;
 }
 @media screen and (max-width: 375px) {
   .container {
