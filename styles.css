@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+.container {
+  background-color: hsl(30, 38%, 92%);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.wrapper {
+  display: flex;
+  max-width: 600px;
+  max-height: 400px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  justify-content: center;
+  align-items: center;
+}
+.img1 {
+  width: 250px;
+  height: 350px;
+}
+.img2 {
+  display: none;
+}
+.description {
+  background-color: white;
+  width: 250px;
+  height: 350px;
+}
+button {
+  border: none;
+  color: white;
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 10px;
+  width: 80%;
+  padding: 10px;
+  /* display: block; 
+  /* color: white;
+  border-width: 10px;
+  border-radius: 5px;
+  height: 10%; */
+}
+button:hover {
+  cursor: pointer;
+  position: relative;
+  top: -5px;
+  right: -5px;
+}
+.cart {
+  width: 10px;
+  position: relative;
+  left: -10px;
+}
+p,
+del {
+  font-size: 14px;
+}
+p,
+button {
+  margin: 10px;
+}
+.f1,
+div.price {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+.f2,
+p.price {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+p.price {
+  color: hsl(158, 36%, 37%);
+}
+p:nth-child(3) {
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+}
+div.p1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media screen and (max-width: 375px) {
+  .container {
+    background-color: hsl(30, 38%, 92%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .wrapper {
+    display: flex;
+    max-width: 600px;
+    max-height: 400px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .pic {
+    width: 100%;
+  }
+  .img1 {
+    display: none;
+  }
+  .img2 {
+    width: 300px;
+    display: block;
+    height: 200px;
+  }
+  .description {
+    background-color: white;
+    width: 300px;
+    max-height: 400px;
+  }
+}
